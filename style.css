@@ -1,10 +1,37 @@
 h1 {
   padding: 20px;
 text-align: center;
+background-color:  #cc0000;
+color: white;
+margin: 20px;
+padding: 40px;
+border-radius: 10px;
+border-color: #ff6666;
+border: 20px ;
+border-style: dashed ;
 }
 
 body {
   background-color: #ffe6e6;
+}
+
+footer {
+  color: white;
+  font-size: 120%;
+  font-family: Brush Script MT;
+  text-align: center;
+  background-color:  #cc0000;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-width: 100%;
+  min-height: 80px;
+  margin-bottom: 0px;
+  border-color:  black;
+  border-radius: 10px;
+  flex-direction: column;
+  border: 15px ;
+  border-style: dashed ;
 }
 
 /* Style the top navigation bar */
@@ -63,9 +90,10 @@ body {
 
 /* Middle column */
 .column.middle {
-  width: 50%;
+  color: black;
+  width: 70%;
   background-color: #ff6666;
-  padding: 15px;
+  padding: 50px;
   border-radius: 60px;
   font-size: 170%;
   font-family: Comic Sans MS;
@@ -75,9 +103,54 @@ body {
 
 }
 
+#content {
+  font-size: 70%;
+  text-align: left;
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
   }
+}
+
+
+
+/*
+#pagebutton{
+  background-color:white;
+  padding: 13px 17px;
+  border-radius: 12px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+*/
+#pagebutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#pagebutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#pagebutton:hover span {
+  padding-right: 25px;
+}
+
+#pagebutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a {
+  color: black;
 }

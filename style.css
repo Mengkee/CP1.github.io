@@ -1,0 +1,83 @@
+h1 {
+  padding: 20px;
+text-align: center;
+}
+
+body {
+  background-color: #ffe6e6;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  background-color: #ffcccc;
+  float: left;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 130%;
+  font-family: Comic Sans MS;
+  min-height: 500px;
+  border: 10px;
+  margin: 20px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+   flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-basis: 200px;
+  align-content: center;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  background-color: #ff6666;
+  padding: 15px;
+  border-radius: 60px;
+  font-size: 170%;
+  font-family: Comic Sans MS;
+  border: 10px;
+  margin: 20px;
+  text-align: center;
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}

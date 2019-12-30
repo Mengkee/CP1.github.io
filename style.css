@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+
+
 h1 {
   padding: 20px;
 text-align: center;
@@ -196,20 +200,28 @@ a {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
+/* The navigation menu links padding: 8px 8px 8px 32px;   display: block;*/
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 5px;
   text-decoration: none;
   font-size: 18px;
   color: #ffe6e6;
-  display: block;
+ display: block;
   transition: 0.3s;
+  border: 1px dashed #ffe6e6;
 }
 
 .sidenav ul {
   list-style-type: none;
 }
 
+.sidenav ul li {
+}
+
+.sidenav ul li::before {
+    color: red;
+    font-weight: bold;
+}
 /*
 .sidenav li::before {content: "---"; color: #ffe6e6;
   display: inline-block; width: 3em;
@@ -225,7 +237,7 @@ a {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 30px;
   margin-left: 50px;
 }
 
@@ -323,3 +335,7 @@ a {
     .tree > li > span:before {
       outline: none;
     }
+
+
+/*
+.latex { background-color: white;}

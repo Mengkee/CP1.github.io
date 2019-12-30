@@ -9,6 +9,78 @@
 <body>
   <h1> Investment section</h1>
 
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="./index.html">CP1 Revision</a>
+     <ul>
+       <li>
+         <a href="../product/productindex.html">Products section</a>
+         <ul>
+           <li>
+             <a href="../product/life.html">Life insurance</a>
+           </li>
+           <li>
+             <a href="../product/pension.html">Pension</a>
+           </li>
+           <li>
+             <a href="../product/general.html">General insurance</a>
+           </li>
+         </ul>
+       </li>
+       <a href="../index.html">contract design section</a>
+       <ul>
+         <li>
+         </li>
+         <li>
+         </li>
+         <li>
+         </li>
+       </ul>
+       <li>
+         <a href="./investment.html">Investment section</a>
+         <ul>
+           <li>
+             <a href="./risk.html">Investment and risk characteristics of certain investment vehicles</a>
+           </li>
+           <li>
+             <a href="./macro.html">How macroeconomic factors affect investment desicion</a>
+           </li>
+           <li>
+             <a href="./strategy.html">Investment strategy</a>
+           </li>
+           <li>
+             <a href="./overseas.html">Overseas markets and emerging markets</a>
+           </li>
+           <li>
+             <a href="./indirect.html">indirect investment versus direct investment</a>
+           </li>
+           <li>
+             <a href="./valuation.html">Valution of both assets and liabilities</a>
+           </li>
+           <li>
+             <a href="./cash.html">Reasons for holding cash</a>
+           </li>
+           <li>
+             <a href="./Yield.html">Explanations of the yield curve</a>
+           </li>
+           <li>
+             <a href="./calculation.html">Calculation questions</a>
+           </li>
+         </ul>
+       </li>
+       <li>
+       </li>
+     </ul>
+     </ul>
+  </div>
+
+  <span onclick="openNav()"><h2>open navigation bar</h2></span>
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+
 <div class="column side">
 Investment is definitely gonna be examined.
 
@@ -45,7 +117,9 @@ Make sure you go through everything.
     <span><a href="./cash.html">Reasons for holding cash</a></span>
   </div>
 
-
+  <div class="column middle" id="pagebutton">
+    <span><a href="./Yield.html">Explanations of the yield curve</a></span>
+  </div>
 
   <div class="column middle" id="pagebutton">
     <span><a href="./calculation.html">Calculation questions</a></span>
@@ -53,9 +127,29 @@ Make sure you go through everything.
 
 </div>
 
-</body>
+<div>
+
+
+
+
+  <script type="text/javascript">
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+
+  </script>
+
 
 <footer>
   <p> Author: Mengke, Lyu</p>
 
 </footer>
+</body>

@@ -29,14 +29,15 @@
   <div id="main">
 
 <div class="column side">
-   <p>Actuarial practice is the subject that makes you happy everyday.</p>
-   <p> In answering all the questions, notice the following tips. </p>
-   <ul>
-     <li>For all the questions, you need to state Basic fact + explanation.</li>
-     <li>Provide enough details is rather important. </li>
-     <li>Even for a "list" question, more explanation is needed than that.</li>
-     <li>Give example where appropriate</li>
-   </ul>
+  <div id="toc_container">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+  <li><a href="#question_1">Data</a>
+  <li><a href="#question_2">Assumptions </a>
+  <li><a href="#question_3">Modelling</a>
+
+</ul>
+</div>
 
 </div>
 
@@ -44,7 +45,7 @@
 
 
   <div class="column middle" >
-    Data
+    <h2 id="question_1">Data</h2>
    <div id="content">
      Data functions
 
@@ -221,7 +222,8 @@
            it is particularly important to check data for members (or policyholders) who have significant liabilities
          </li>
 
-         In general, the extent of data verification in any particular situation will depend on the financial significance of any errors made.
+         In general, the extent of data verification in any particular situation
+         will depend on the financial significance of any errors made.
        </ul>
      </li>
    </div>
@@ -231,6 +233,76 @@
   <div class="column middle" >
     Modelling
    <div id="content">
+     <a href="../contract/model">The key requirements of an actuarial model</a>
+     <ul>
+       <li>The model being used must be valid, rigorous enough for its purpose and adequately documented
+       </li>
+       <li>The model chosen should be capable of adequately reflecting the risk profile of the financial products, schemes, contract or transactions being modelled.
+       </li>
+       <li>So at the planning stage, the requirements of all stakeholders should be brought into account and the budget/timescales/etc should be established
+       </li>
+       <li> At the model design stage, the methods or other models available to test the model should be considered, so that the model built can be adequately tested.
+       </li>
+       <li> The parameters used must allow for all those features of the business being modelled that could significantly affect the advice being given.
+       </li>
+       <li> The inputs to the parameter values should be appropriate to the business being modelled and take into account any special features of the provider and the economic and business environment in which it is operating.
+       </li>
+       <li>The workings of the model should be easy to appreciate and communicate.  This is both the structure of the model and how the parameterisation has been determined.  The model should exhibit sensible joint behaviour of model variables.
+       </li>
+       <li>The outputs for the model should be capable of independent verification for reasonableness. The results should be displayed clearly and should be communicable to those to whom advice will be given.
+       </li>
+       <li>The model must not be overly complex so that either the results become difficult to interpret and communicate or the model becomes too long or expensive to run, unless this is required by the purpose of the model.  It is important to avoid the impression that everything can be modelled.
+       </li>
+       <li>The model should be capable of development and refinement – nothing complex can be successfully designed and built in a single attempt
+       </li>
+       <li>A range of methods of implementation should be available to facilitate testing, parameterisation and focus of results
+       </li>
+     </ul>
+
+     Deterministic or stochastic?
+     <ul>
+       <li>
+         Features
+         <ul>
+           <li>
+             In a deterministic model, the parameter values are fixed at the outset and the model output will be a single realisation of the future experience.
+           </li>
+           <li>
+             Sensitivity analysis is then used to assess the variability of the model output as a result of changing one or more parameter values.
+           </li>
+           <li>
+             In a stochastic model, one or more of the parameters is represented by a specified probability distribution.
+           </li>
+           <li>
+             Then, the model is run a large number of times and the value of these parameters is simulated from the chosen distribution each time. Thus, the model output will be a range of different possible future scenarios, giving an understanding of the distribution of outcomes.
+           </li>
+         </ul>
+       </li>
+       <li>
+         Advantages / Disadvantages of using a stochastic model
+         <ul>
+           <li>
+             Advantages
+             <ul>
+               <li>
+                 allows uncertainties in future outcomes (i.e. risks faced) to measured objectively,
+               </li>
+               <li>
+                 allows pay-offs from options and guarantees to be modelled.
+               </li>
+               <li>
+                 -	Stochastic models are particularly useful in assessing the impact of financial guarantees.
+because such guarantees will lead to a pay-out in some future circumstances and not in others ... which cannot be replicated easily in a deterministic model (where pay-out will definitely occur or definitely not occur, depending on assumptions used.
+
+               </li>
+             </ul>
+           </li>
+           <li>
+             Disadvantages
+           </li>
+         </ul>
+       </li>
+     </ul>
    </div>
   </div>
 

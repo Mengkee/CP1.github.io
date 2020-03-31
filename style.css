@@ -131,6 +131,7 @@ list-style: outside none none !important;
 .container {
   display: flex;
   width: 70%;
+  float: right;
   flex-direction: column;
    flex-wrap: nowrap;
     justify-content: space-around;

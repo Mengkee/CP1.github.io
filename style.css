@@ -130,8 +130,8 @@ list-style: outside none none !important;
 
 .container {
   display: flex;
-  width: 70%;
-  float: right;
+
+
   flex-direction: column;
    flex-wrap: nowrap;
     justify-content: space-around;
@@ -142,7 +142,7 @@ list-style: outside none none !important;
 /* Middle column width: 70%;*/
 .column.middle {
   color: black;
-
+  width: 70%;
   background-color: #ff6666;
   padding: 50px;
   border-radius: 60px;

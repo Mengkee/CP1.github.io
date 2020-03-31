@@ -336,10 +336,142 @@
       Regardless of which approach is used, when setting the discount rates used to value the assets and liabilities, it is crucial that a consistent rate is used in each case.
       <br>
       <span id="question_4_1">Discounted cash flow valuation</span>
+      <br>
+      The key assumption in this case is the expected rate of return in future on the assets held to meet the liabilities, which is then used to discount the future cash flows to give a present value.
+      <br>
+      For consistency, assets must also be valued by discounting the expected future cash flows using similar long-term assumptions
+      <br>
+      The main criticism of this approach is that it is likely to place a different value on the assets from the market value. (can be difficult to justify to the scheme sponsor why the value placed on the assets by the actuary is different from that by the market ... particularly if it is a lower value (and, thus, requires additional contributions from the sponsor to make good any resulting deficit).)
+      <br>
+      This occurs because it is fundamentally incorrect to allow for risk (i.e. uncertainty in the future cash flows) by discounting the expected cash flows at a fixed rate of interest.
+      <br>
+      the fact remains that if a market were developed in future to trade the liability cash flows, the most sensible value to place on these cash flows would be this market value
+      <br>
       <span id="question_4_2">Market-related valuation</span>
+      <br>
+      the aim is to find a consistent value for the liabilities.
+      <ul>
+        <li>
+          Method 1: fair value (defination)
+          <br>
+          A “market‐consistent” value for the cash flows can be thought of as the amount that another investor in the market would be required to be paid to accept responsibility for meeting the liabilities
+          , assuming that such a fully competitive market were to exist and that both parties to the transaction were fully informed).
+        </li>
+        <li>
+          Method 2: Marketing to market
+          <br>
+          This is usually done by constructing a replicating portfolio of assets that most closely matches the liabilities by both duration and risk characteristics.
+          <br>
+          Then, the discount rate for the liabilities is based on the return on the assets making up this replicating portfolio (rather than the return on the actual assets held to meet the liabilities).
+          <br>
+          Typically, this is done by a process known as marking‐to‐market.
+          <br>
+          In this case, a portfolio of fixed‐interest bonds can be designed such that the cash flows match those
+          expected from the portfolio of non‐profit whole life assurance contracts.
+          <br>
+          Then, the market value of the replicating portfolio can be taken as the “market” value of the corresponding liabilities.
+          <br>
+          However, it should be noted that, due to uncertainties in future mortality experience, the timing of liability cash flows will not be known in advance.
+          <br>
+          This is particularly true when the number of policies in the portfolio is small.
+          <br>
+          Thus, the “market” value obtained will not reflect the full risk characteristics of the liability cash flows
+          <br>
+          However, it should be noted that, due to uncertainties in future mortality experience, the timing of
+          liability cash flows will not be known in advance. This is particularly true when the number of
+          policies in the portfolio is small.
+          <br>
+          Thus, the “market” value obtained will not reflect the full risk characteristics of the liability cash flows, and as such, cannot be thought of as representing a true and fair value (at which two
+          fully informed counterparties would willingly trade the uncertain future cash flows).
+          <br>
+          Thus, in practice, whilst it may be possible to construct a replicating portfolio reflecting many of the
+          financial risks inherent in the liability cash flows, it is very difficult to construct a portfolio that fully
+          reflects all the risks involved.
+          <br>
+          However, as more sophisticated investment instruments are developed (e.g. mortality‐linked
+          securities where the payments are linked to actual mortality experience in a given population),
+          it is likely that this approach will become more common.
+          <br>
+          But, as the mortality experience driving the payments on mortality‐linked securities will not fully
+          reflect the experience of a company’s own portfolio of business, the full risk characteristics of a
+          particular set of liabilities will not readily be captured until a market for trading the cash flows
+          actually exists.
+        </li>
+        <li>
+          Method 3: discount the cash flow using market rate of interest
+          <br>
+          When such a replicating portfolio does not readily exist, the aim is to discount the liability cashflows at the current yield on an investment that best match these cash flows.
+          <br>
+          In practice, this often means that current market yields on long-term government bonds are used to discount the future expected liability cash flows. It may be considered appropriate to use discount rates that vary with term to reflect the current shape of the yield curve.
+          <br>
+          However, it is much more difficult to appropriately allow for many of the risk characteristics (e.g. uncertainty resulting from factors affecting future claims experience, such as mortality) MTM value for uncertain cash flows is higher than true “market” value.
+          <br>
+          Then, whilst MTM will often give a prudent value for the liability cash flows, it cannot be thought of as representing a true and fair value (at which two fully informed counterparties would willingly trade the uncertain future cash flows)
+          <br>
+        </li>
+      </ul>
       <span id="question_4_3">A different approach to market value: State price deflators </span>
+      <br>
+      A deflator is a stochastic discount factor that can be applied to a series of “real-world” cash flows to produce market-consistent valuations.
+      <br>
+      The risk-neutral approach to derive market-consistent valuations for option contracts, which discounted future cash flows in an artificial risk-neutral world using the risk-free interest rate.
+      <br>
+      However, actuaries require more than simply market-consistent capital values. Real-world projections of future cash flows are used to assist in a range of business management decisions.
+      <br>
+      Thus, a risk-neutral model cannot be readily used when valuing liabilities in an actuarial context.
+      <br>
+      As deflators are stochastic functions, a different deflator (or discount factor) is applied to the future real-world cash flows arising under each possible scenario generated using a chosen stochastic cash flow model.
+      <br>
+      Then, the expected value of the deflated cash flows represents a “market-consistent” valuation (assuming that the parameters of the model have been calibrated to current market conditions).
+      <br>
+      Deriving appropriate functional forms for the state price deflator for a given stochastic cash flow model can be very difficult, particularly as the model will contain uncertainties arising as a result of both economic and statistical variables.
+      <br>
       <span id="question_4_4">Allowing for risk in cash flows in reality</span>
+      <br>
+      In practice, actuaries have taken a somewhat simpler approach to allowing for the risk (or uncertainty) in the future cash flows:
+      <ul>
+        <li>
+           best estimate plus margin ─ i.e. a margin reflecting the risk involved is included explicitly in each assumption made
+        </li>
+        <li>
+          contingency loading ─ i.e. a single contingency loading is applied to the best estimate of the value of the future liability cash flows
+        </li>
+        <li>
+          discounting cash flows using a risk premium ─ i.e. best estimate cash flows are discounted at a rate of return that reflects the overall risk of the contract
+        </li>
+      </ul>
       <span id="question_4_5">Methods of calculating reserves in non-life insurance</span>
+      <ul>
+        <li>(1)	Statistical analysis
+          <br>
+          If the population exposed to a particular risk is large enough, then by the Law of Large Numbers, a mathematical approach to establishing a reserve for the risk will give a valid estimate (e.g. based on the chain ladder techniques outlined above).
+        </li>
+        <li>
+          (2)	Case-by-case estimates
+          <br>
+          However, if the insured risks are heterogeneous or claim events are rare (with large variability in the claim amount), then such statistical techniques can break down.
+          <br>
+          because chain ladder techniques assume that the claim development process is stable (with regard to reporting and settlement). unlikely to be true with very heterogeneous claim events that often need to be assessed individually.
+          <br>
+          Disadvantages:
+          <ul>
+            <li>
+              time-consuming and, thus, expensive
+            </li>
+            <li>
+              subjective (as different claims assessors with place a different value on the liabilities).
+            </li>
+            <li>
+              information required to estimate reserve may not be readily available (e.g. if it is dependent on a future court ruling).
+            </li>
+          </ul>
+        </li>
+        <li>
+          (3)	Equalisation reserves
+          <br>
+          For low probability risks with large and volatile claim amounts, it may also be appropriate to set up a claims equalisation reserve in years when few claims arise (and profits would otherwise be high). This can then be used to smooth results in years when more claims arise.
+        </li>
+      </ul>
    </div>
   </div>
 

@@ -130,6 +130,7 @@ list-style: outside none none !important;
 
 .container {
   display: flex;
+  width: 70%;
   flex-direction: column;
    flex-wrap: nowrap;
     justify-content: space-around;
@@ -137,10 +138,10 @@ list-style: outside none none !important;
   align-content: center;
 }
 
-/* Middle column */
+/* Middle column width: 70%;*/
 .column.middle {
   color: black;
-  width: 70%;
+
   background-color: #ff6666;
   padding: 50px;
   border-radius: 60px;
@@ -159,7 +160,7 @@ list-style: outside none none !important;
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+  .column.side, .container {
     width: 100%;
   }
 }

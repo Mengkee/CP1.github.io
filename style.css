@@ -164,7 +164,15 @@ h2:hover  {
   color:#cc0000;
 }
 
+.wrap {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+
 body {
+  background: -webkit-canvas(demo-canvas);
   background-color: #ffe6e6;
 }
 
@@ -486,5 +494,9 @@ a {
     }
 
 
+
 /*
 .latex { background-color: white;}
+
+
+*/

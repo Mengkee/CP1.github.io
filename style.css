@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
+html.gray {
+    -webkit-filter: grayscale(.95);
+}
+
 .lds-heart {
   display: inline-block;
   position: relative;
@@ -172,6 +176,7 @@ h2:hover  {
 
 
 body {
+  -webkit-filter: grayscale(.95);
   background: -webkit-canvas(demo-canvas);
   background-color: #ffe6e6;
 }

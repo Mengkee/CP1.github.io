@@ -4,6 +4,10 @@
   <title>Reporting</title>
   <meta charset="utf-8">
   <link href="../style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="../js/mathjax.js">
+  </script>
   <script type="text/javascript">
     $("document").ready(function(){
         $("#navigator").load("../common/navigatorsub.html");
@@ -328,12 +332,15 @@
     <span id="question_3">Monitoring experience</span>
     <div id="content">
       <span id="question_3_1">Introduction</span>
+      <p>
       The final stage of the Actuarial Control Cycle is monitoring the experience. This is done to review the suitability of the models and assumptions used and, if necessary, to make appropriate revisions.
       <br>
       In particular, it allows for any adverse trends in the experience to be detected quickly and for corrective action to be taken.
       <br>
       Corrective action can be taken both in regard of new business to be sold in future and, where possible, existing in-force business.
+      </p>
       <span id="question_3_2">Data requirements</span>
+      <p>
       Before carrying out any monitoring exercise, the actuary must have access to <span class="highlight">a reasonable volume of
         stable and consistent data.</span>
         This will enable to actuary to
@@ -348,9 +355,23 @@
         It may be necessary to adjust some of the past data to ensure consistency both within the past data itself and with respect to the future experience to be estimated (e.g. if underwriting practices or policy terms have changed recently). Compare on the like-to-like basis
         <br>
         Then, the data must be divided into broadly homogeneous risk groups according to the main risk factors.
-        
+        <br>
+        What is the main problem with failing to ensure broadly homogeneous data within a particular cell?
+        <br>
+        change in mix of underlying risk will cause actual experience to differ from expected (even if all other assumptions made are borne out in practice)
+        <br>
+        However, it is also important to ensure that enough data is contained within each cell to allow a credible analysis of experience. This is a particular problem for smaller insurance companies and/or pension funds.
+      </p>
       <span id="question_3_3">Analysis process</span>
+      <p>
+        After sub-dividing the data into broadly homogeneous groups, the actual experience can be compared with that expected.
+        <br>
+        For statistical factors such as mortality (or withdrawal), the observed experience for each homogeneous cell is given by:
+        \[ actual mortality rate = \frac{observed number of deaths}{total exposed-to-risk} \]
+      </p>
       <span id="question_3_4">Using the results</span>
+      <p>
+      </p>
 
     </div>
   </div>

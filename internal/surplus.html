@@ -4,6 +4,13 @@
   <title>Surplus management</title>
   <meta charset="utf-8">
   <link href="../style.css" rel="stylesheet" type="text/css">
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+ </script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+ <script type="text/javascript" src="../js/mathjax.js">
+ </script>
   <script type="text/javascript">
     $("document").ready(function(){
         $("#navigator").load("../common/navigatorsub.html");
@@ -123,13 +130,115 @@
   <div class="column middle">
     <span id="question_2">Actual vs expected experience</span>
     <div id="content">
-
+      <table>
+      <tbody>
+      <tr>
+      <td width="88">
+      <p><em>Product</em></p>
+      </td>
+      <td width="167">
+      <p><em>Most important assumption</em></p>
+      </td>
+      <td colspan="2" width="208">
+      <p><em>Significant assumption</em></p>
+      </td>
+      <td width="90">
+      <p><em>Not important</em></p>
+      </td>
+      </tr>
+      <tr>
+      <td width="88">
+      <p><em>non-profit endowment assurance</em></p>
+      </td>
+      <td width="167">
+      <p>Investment. As non-profit, funds are likely to be invested in low-risk assets (e.g. fixed-interest bonds), so investment experience unlikely to be very volatile.</p>
+      </td>
+      <td width="180">
+      <p>expenses could be significant, particularly if contract is long term (as there is no scope to adjust loading if inflation is higher than expected</p>
+      </td>
+      <td colspan="2" width="118">
+      <p>mortality is not really important, as benefit will be paid anyway (this only affects when).</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="88">
+      <p><em>Term assurance</em></p>
+      </td>
+      <td width="167">
+      <p>Mortality is the most important assumption</p>
+      </td>
+      <td width="180">
+      <p>expenses may again be significant.</p>
+      </td>
+      <td colspan="2" width="118">
+      <p>investment not crucial, as funds small.</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="88">
+      <p><em>UL assurance</em></p>
+      </td>
+      <td width="167">
+      <p>expenses will be most significant. but, this will depend on investment experience and inflation.</p>
+      </td>
+      <td width="180">
+      <p>&nbsp;</p>
+      </td>
+      <td colspan="2" width="118">
+      <p>&nbsp;</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="88">
+      <p><em>Non-life insurance</em></p>
+      </td>
+      <td width="167">
+      <p>expenses will be crucial, as can be high proportion of costs.</p>
+      </td>
+      <td width="180">
+      <p>investment return: important for long-tail business.</p>
+      <p>claims experience (i.e. frequency and amount)</p>
+      <p>will be crucial. Also claim inflation (related to price inflation, court award inflation or some other measure).</p>
+      </td>
+      <td colspan="2" width="118">
+      <p>&nbsp;</p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
   </div>
 </div>
 
   <div class="column middle">
     <span id="question_3">Defining the surplus arising</span>
     <div id="content">
+      For most types of business, the generally accepted definition of the profit (or surplus) arising within a particular time period is:
+      <br>
+      total surplus = value of assets – value of liabilities
+      <br>
+      Surplus (or deficit) will appear and disappear as experience unfolds.
+      <br>
+      However, the total surplus at any time also depends on the basis and methodology used to value the assets and the liabilities.
+      <br>
+      But, crucially, as any remaining reserves will be released when the contract finishes, these assumptions will not affect the total surplus achieved over the lifetime of the contract – although it will affect the timing of the emergence of the surplus during the contract.
+      <br>
+      Then, the surplus arising in a given time period is the change in the total surplus over the time period.
+      \[ S_{t+1}=(A_{t+1}-L_{t+1})-(A_{t}-L_{t}) = (A_{t+1}-A_{t})-(L_{t+1}-L_{t})  \]
+      Then, the surplus arising in a particular period can be derived from the balance sheet entries and is analogous to the profit (or loss) achieved over the period by most other types of business.
+      <br>
+      Typically, the statutory value of both the assets and the liabilities will be used in the above calculation of the surplus arising.
+      <ul>
+        <li>
+          We will need to calculate the statutory surplus for other purposes: e.g. reporting purpose, demonstrate solvency.
+        </li>
+        <li>
+          Because this will prevent the results from being artificially manipulated by changing the valuation basis.
+        </li>
+        <li>
+          The statutory valuation basis does not change over time. this gives consistency between different companies and between different years (for the same company).
+        </li>
+      </ul>
+      The surplus arising in any given year will depend on the strength of the reserving basis used to value the assets and liabilities (although, from above, the total surplus achieved on the contract will not). Thus, any one-off change in the reserving basis from year to year can have a significant effect on the pattern of emerging surplus.
 
   </div>
 </div>
@@ -137,6 +246,8 @@
   <div class="column middle">
     <span id="question_4">Analysis of surplus</span>
     <div id="content">
+      An analysis of surplus attempts to divide the surplus arising over a particular year into its constituent components.
+      
 
   </div>
 </div>

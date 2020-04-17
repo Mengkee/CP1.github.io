@@ -416,23 +416,20 @@
           Then, whilst MTM will often give a prudent value for the liability cash flows, it cannot be thought of as representing a true and fair value (at which two fully informed counterparties would willingly trade the uncertain future cash flows)
           <br>
         </li>
-      </ul>
-      <span class="header5" id="question_4_3">A different approach to market value: State price deflators </span>
+    <li>
+      Method 4: State price deflators
       <br>
-      A deflator is a stochastic discount factor that can be applied to a series of “real-world” cash flows to produce market-consistent valuations.
+      we can use a stochastic asset model to generate a range of possible future
+      scenarios and then discount the resulting cash flows using a state-price deflator (or
+      stochastic discount factor) to arrive at a market-consistent value for the liabilities (that takes
+      appropriate account of the uncertainties attached to the individual cash flows).
       <br>
-      The risk-neutral approach to derive market-consistent valuations for option contracts, which discounted future cash flows in an artificial risk-neutral world using the risk-free interest rate.
-      <br>
-      However, actuaries require more than simply market-consistent capital values. Real-world projections of future cash flows are used to assist in a range of business management decisions.
-      <br>
-      Thus, a risk-neutral model cannot be readily used when valuing liabilities in an actuarial context.
-      <br>
-      As deflators are stochastic functions, a different deflator (or discount factor) is applied to the future real-world cash flows arising under each possible scenario generated using a chosen stochastic cash flow model.
-      <br>
-      Then, the expected value of the deflated cash flows represents a “market-consistent” valuation (assuming that the parameters of the model have been calibrated to current market conditions).
-      <br>
-      Deriving appropriate functional forms for the state price deflator for a given stochastic cash flow model can be very difficult, particularly as the model will contain uncertainties arising as a result of both economic and statistical variables.
-      <br>
+      However, it can be difficult to derive an appropriate structure for the state-price deflator for
+      a chosen stochastic asset model (unless it was constructed with this aim in mind) and it can
+      also be difficult to ensure that the model is correctly parameterised to reflect current
+      market conditions.
+    </li>
+    </ul>
       <span class="header5" id="question_4_4">Allowing for risk in cash flows in reality</span>
       <br>
       In practice, actuaries have taken a somewhat simpler approach to allowing for the risk (or uncertainty) in the future cash flows:
@@ -460,15 +457,11 @@
               suitable for claims with high frequency and low severity
             </li>
             <li>
-              particularly poor for
+              particularly poor for bodily injuries
             </li>
             <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
+              Suitable when there are a large number of policies and it appears to be unrealistic
+              to estimate the reserve on a case-by-case basis
             </li>
           </ul>
         </li>
